@@ -1,0 +1,249 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+# Site
+title: 零零怪的小屋
+subtitle: ""
+description: ""
+keywords:
+author: 零零怪
+language: en
+timezone: ""
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://github.com/00guai
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ""
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ""
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ""
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ""
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: "mtime"
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+# theme: landscape
+theme: butterfly
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  - type: git
+    repo:
+  - type: heroku
+    repo:
+
+Home: / || fas fa-home
+Archives: /archives/ || fas fa-archive
+Tags: /tags/ || fas fa-tags
+Categories: /categories/ || fas fa-folder-open
+List||fas fa-list:
+  Music: /music/ || fas fa-music
+  Movie: /movies/ || fas fa-video
+Link: /link/ || fas fa-link
+About: /about/ || fas fa-heart
+
+menu:
+  主页: / || fas fa-home
+  博文 || fa fa-graduation-cap:
+    分类: /categories/ || fa fa-archive
+    标签: /tags/ || fa fa-tags
+    归档: /archives/ || fa fa-folder-open
+  生活 || fas fa-list:
+    分享: /shuoshuo/ || fa fa-comments-o
+    相册: /photos/ || fa fa-camera-retro
+    音乐: /music/ || fa fa-music
+    影视: /movies/ || fas fa-video
+  友链: /links/ || fa fa-link
+  留言板: /comment/ || fa fa-paper-plane
+  #留言板: /messageboard/ || fa fa-paper-plane
+  关于笔者: /about/ || fas fa-heart
+
+  ## 代码
+  highlight_theme: mac
+  highlight_copy: true
+  code_word_wrap: true
+  highlight_height_limit: false # unit: px
+  highlight_shrink: true #代码框不展开，需点击 '>' 打开
+
+##  社交信息
+social:
+  fab fa-github: https://github.com/00guai || Github
+  fas fa-envelope: mailto:1986055395@qq.com || Email
+
+  top_img: "linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"
+
+  avatar:
+  img: https://i.postimg.cc/VN90JPSQ/f122883a34d0cd.jpg
+  effect: true # 头像会一直转圈
+  photofigcaption: true
+
+cover:
+  # 是否显示文章封面
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  # 封面显示的位置
+  # 三个值可配置 left , right , both
+  position: both
+  # 当没有设置cover时，默认的封面显示
+  default_cover: https://wallroom.io/img/1920x1200/bg-ef5f3ef.jpg
+
+index_img:
+  https://wallroom.io/img/1920x1200/bg-ef5f3ef.jpg
+
+  # copy settings
+# copyright: Add the copyright information after copied content (复製的内容后面加上版权信息)
+# copy:
+#   enable: true
+#   copyright:
+#     enable: true
+#     limit_count: 50
+
+# Lorem ipsum dolor sit amet, test link consectetur adipiscing elit. Strong text pellentesque ligula commodo viverra vehicula. Italic text at ullamcorper enim. Morbi a euismod nibh. Underline text non elit nisl. Deleted text tristique, sem id condimentum tempus, metus lectus venenatis mauris, sit amet semper lorem felis a eros. Fusce egestas nibh at sagittis auctor. Sed ultricies ac arcu quis molestie. Donec dapibus nunc in nibh egestas, vitae volutpat sem iaculis. Curabitur sem tellus, elementum nec quam id, fermentum laoreet mi. Ut mollis ullamcorper turpis, vitae facilisis velit ultricies sit amet. Etiam laoreet dui odio, id tempus justo tincidunt id. Phasellus scelerisque nunc sed nunc ultricies accumsan.
+
+# 作者: 零零怪
+# 连结: https://github.com/00guai
+# 来源: http://localhost:4000/00guai/
+# 着作权归作者所有。商业转载请联络作者获得授权，非商业转载请註明出处。
+
+# footer:
+#   owner:
+#     enable: true
+#     since: 2022
+
+#     custom_text: Hi, welcome to my <a href="https://butterfly.js.org/">blog</a>!
+
+# translate:
+#   enable: true
+#   # 默认按钮显示文字(网站是简体，应设置为'default: 繁')
+#   default: 简
+#   #网站默认语言，1: 繁体中文, 2: 简体中文
+#   defaultEncoding: 1
+#   #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+#   translateDelay: 0
+#   #当文字是简体时，按钮显示的文字
+#   msgToTraditionalChinese: "繁"
+#   #当文字是繁体时，按钮显示的文字
+#   msgToSimplifiedChinese: "简"
+
+# # dark mode
+# darkmode:
+#   enable: true
+#   # dark mode和 light mode切换按钮
+#   button: true
+#   autoChangeMode: false
+
+# readmode: true
+
+# # Don't modify the following settings unless you know how they work (非必要请不要修改 )
+# # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
+# # Don't repeat 不要重复
+# rightside_item_order:
+#   enable: false
+#   hide: # readmode,translate,darkmode,hideAside
+#   show: # toc,chat,comment
+
+# <div class="gallery-group-main">
+# {% galleryGroup '壁纸' '收藏的一些壁纸' '/Gallery/wallpaper' https://wallroom.io/img/5120x3200/bg-91676ce.jpg %}
+# {% galleryGroup '漫威' '关于漫威的图片' '/Gallery/marvel' https://wallroom.io/img/1920x1200/bg-9d0acc0.jpg %}
+
+# </div>
+
+# {% gallery %}
+# ![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)
+# ![](https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg)
+# ![](https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg)
+# ![](https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg)
+# ![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)
+# ![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)
+# ![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)
+# ![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)
+# {% endgallery %}
+
+# A simple 404 page
+error_404:
+  enable: true
+  subtitle: "页面没有找到"
+  background:
+
+## 本地搜索配置
+local_search:
+  - enable: false
++  enable: true
