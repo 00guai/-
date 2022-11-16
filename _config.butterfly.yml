@@ -14,7 +14,7 @@ timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://github.com/00guai
+url: http://www.00guai.top/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,21 +103,21 @@ theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  - type: git
-    repo:
-  - type: heroku
-    repo:
+# deploy:
+#   - type: git
+#     repo:
+#   - type: heroku
+#     repo:
 
-Home: / || fas fa-home
-Archives: /archives/ || fas fa-archive
-Tags: /tags/ || fas fa-tags
-Categories: /categories/ || fas fa-folder-open
-List||fas fa-list:
-  Music: /music/ || fas fa-music
-  Movie: /movies/ || fas fa-video
-Link: /link/ || fas fa-link
-About: /about/ || fas fa-heart
+# Home: / || fas fa-home
+# Archives: /archives/ || fas fa-archive
+# Tags: /tags/ || fas fa-tags
+# Categories: /categories/ || fas fa-folder-open
+# List||fas fa-list:
+#   Music: /music/ || fas fa-music
+#   Movie: /movies/ || fas fa-video
+# Link: /link/ || fas fa-link
+# About: /about/ || fas fa-heart
 
 menu:
   主页: / || fas fa-home
@@ -133,7 +133,6 @@ menu:
   友链: /links/ || fa fa-link
   留言板: /comment/ || fa fa-paper-plane
   #留言板: /messageboard/ || fa fa-paper-plane
-  关于笔者: /about/ || fas fa-heart
 
   ## 代码
   highlight_theme: mac
